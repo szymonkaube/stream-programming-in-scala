@@ -8,8 +8,6 @@ https://www.scala-lang.org/api/current/scala/util/hashing/MurmurHash3$.html
 
 import scala.util.hashing.MurmurHash3
 import scala.math.log, scala.math.pow, scala.math.exp
-import scala.io._
-
 
 /**
 * Estimates the distinct cardinality of a multiset using the HyperLogLog algorithm.
