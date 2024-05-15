@@ -24,7 +24,7 @@ class BloomFilter(baseSet: Set[String], epsilon: Float) {
     
     // Creating the Bloom filter array
     val bloomFilter: Array[Boolean] = Array.fill(m)(false)
-    // Buildint the Bloom filter from the base set
+    // Building the Bloom filter from the base set
     baseSet.foreach(element => {
         val hashes: List[Int] = familyHash(element, k)
         val indices: List[Int] = hashes.map(hash => hash % m)
